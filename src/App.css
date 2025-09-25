@@ -1,0 +1,102 @@
+/* app.css: Global styles for Freelancer Marketplace */
+body {
+  margin: 0;
+  padding: 0;
+  background: #181824;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #e1e1e1;
+  min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Main container styles */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Card panel styles (for profile, forms, etc.) */
+.panel {
+  background: #22223a;
+  box-shadow: 0 2px 12px rgba(40, 40, 64, 0.14);
+  border-radius: 9px;
+  padding: 28px 32px;
+  margin: 32px auto;
+  max-width: 420px;
+}
+
+/* Form field styles */
+input, select, textarea {
+  background: #22223a;
+  color: #e1e1e1;
+  border: 1px solid #393960;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #44dfff;
+  background: #151524;
+}
+
+/* Button styles */
+button {
+  background: #4678f4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, button:focus {
+  background: #44dfff;
+  color: #181824;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #44dfff;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+/* Links */
+a {
+  color: #44dfff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #60a4fa;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  background: #22223a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4678f4;
+  border-radius: 6px;
+}
+
+/* Responsive Typography */
+@media (max-width: 700px) {
+  .panel {
+    padding: 18px 7px;
+    max-width: 99vw;
+  }
+  body {
+    font-size: 0.96rem;
+  }
+}

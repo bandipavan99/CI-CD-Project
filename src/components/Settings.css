@@ -1,0 +1,28 @@
+.settings-container {
+  width: 330px;
+  margin: 50px auto;
+  background: #222;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #222;
+}
+.settings-container h2 {
+  color: #fff;
+}
+.settings-container label {
+  color: #fff;
+  display: block;
+  margin: 14px 0;
+}
+.settings-container input[type="checkbox"] {
+  margin-left: 10px;
+}
+.settings-container button {
+  background: #0496ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+}

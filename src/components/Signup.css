@@ -1,0 +1,108 @@
+.signup-bg {
+  background: linear-gradient(120deg, #e3f0ff 0%, #f0f4f9 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBg 2s;
+}
+
+@keyframes fadeInBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.signup-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 12px 36px rgba(0, 83, 186, 0.17);
+  padding: 38px 40px 44px;
+  max-width: 430px;
+  width: 100%;
+  color: #2a2d3a;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  animation: floatCard 1.2s cubic-bezier(.36,.67,.5,.97);
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(80px) scale(0.85); opacity:0; }
+  80% { transform: translateY(-4px) scale(1.04); opacity:1; }
+  100% { transform: translateY(0) scale(1); opacity:1; }
+}
+
+.gradient-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0053ba 0%, #00c6fb 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+}
+
+.signup-card label {
+  font-size: 1.04rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"] {
+  width: 100%;
+  padding: 13px 18px;
+  margin-top: 8px;
+  border: 1.7px solid #e0e7ef;
+  border-radius: 10px;
+  font-size: 1.01rem;
+  background: #f5faff;
+  transition: border-color 0.27s, box-shadow 0.27s;
+}
+
+.signup-card input:focus {
+  border-color: #00c6fb;
+  background: #e3f6fd;
+  box-shadow: 0 2px 8px #00c6fb33;
+  outline: none;
+}
+
+.signup-card button[type="submit"] {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #0053ba 0%, #00c6fb 100%);
+  border: none;
+  border-radius: 11px;
+  font-size: 1.13rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 7px 23px rgba(0, 83, 186, 0.10);
+  transition: background 0.37s, box-shadow 0.27s;
+}
+
+.signup-card button:hover {
+  box-shadow: 0 10px 35px rgba(0, 198, 251, 0.23);
+}
+
+.signup-terms {
+  font-size: 0.87rem;
+  margin-top: 16px;
+  color: #6278a2;
+  text-align: center;
+}
+
+.signup-terms a {
+  color: #1b76d8;
+  text-decoration: none;
+  margin: 0 3px;
+  transition: color 0.23s;
+}
+
+.signup-terms a:hover {
+  color: #0053ba;
+  text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+.login-container {
+  width: 280px;
+  margin: 40px auto;
+  background: #19192d;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #333;
+}
+.login-container h2 {
+  color: #fff;
+  text-align: center;
+}
+.login-container input {
+  width: 100%;
+  margin: 12px 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #0496ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
